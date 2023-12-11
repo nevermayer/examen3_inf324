@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListaEstudiante">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListaEstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaEstudianteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreaEstudiante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fec_nac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreaEstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreaEstudianteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminaEstudiante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminaEstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eliminaEstudianteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="editaEstudiante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fec_nac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="editaEstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="editaEstudianteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListaEstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaEstudiante" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaEstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreaEstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:CreaEstudiante" />
+  </wsdl:message>
+  <wsdl:message name="CreaEstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:CreaEstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminaEstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminaEstudiante" />
+  </wsdl:message>
+  <wsdl:message name="eliminaEstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminaEstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="editaEstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:editaEstudiante" />
+  </wsdl:message>
+  <wsdl:message name="editaEstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:editaEstudianteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="ListaEstudiante">
+      <wsdl:input message="tns:ListaEstudianteSoapIn" />
+      <wsdl:output message="tns:ListaEstudianteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreaEstudiante">
+      <wsdl:input message="tns:CreaEstudianteSoapIn" />
+      <wsdl:output message="tns:CreaEstudianteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminaEstudiante">
+      <wsdl:input message="tns:eliminaEstudianteSoapIn" />
+      <wsdl:output message="tns:eliminaEstudianteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="editaEstudiante">
+      <wsdl:input message="tns:editaEstudianteSoapIn" />
+      <wsdl:output message="tns:editaEstudianteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListaEstudiante">
+      <soap:operation soapAction="http://tempuri.org/ListaEstudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreaEstudiante">
+      <soap:operation soapAction="http://tempuri.org/CreaEstudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminaEstudiante">
+      <soap:operation soapAction="http://tempuri.org/eliminaEstudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editaEstudiante">
+      <soap:operation soapAction="http://tempuri.org/editaEstudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListaEstudiante">
+      <soap12:operation soapAction="http://tempuri.org/ListaEstudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreaEstudiante">
+      <soap12:operation soapAction="http://tempuri.org/CreaEstudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminaEstudiante">
+      <soap12:operation soapAction="http://tempuri.org/eliminaEstudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editaEstudiante">
+      <soap12:operation soapAction="http://tempuri.org/editaEstudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="https://localhost:44362/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="https://localhost:44362/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

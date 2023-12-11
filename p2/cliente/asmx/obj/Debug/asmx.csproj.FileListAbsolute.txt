@@ -1,0 +1,20 @@
+D:\source\repos\asmx\asmx\bin\Debug\asmx.exe.config
+D:\source\repos\asmx\asmx\bin\Debug\asmx.exe
+D:\source\repos\asmx\asmx\bin\Debug\asmx.pdb
+D:\source\repos\asmx\asmx\obj\Debug\asmx.csproj.AssemblyReference.cache
+D:\source\repos\asmx\asmx\obj\Debug\asmx.Form1.resources
+D:\source\repos\asmx\asmx\obj\Debug\asmx.Properties.Resources.resources
+D:\source\repos\asmx\asmx\obj\Debug\asmx.csproj.GenerateResource.cache
+D:\source\repos\asmx\asmx\obj\Debug\asmx.csproj.CoreCompileInputs.cache
+D:\source\repos\asmx\asmx\obj\Debug\asmx.exe
+D:\source\repos\asmx\asmx\obj\Debug\asmx.pdb
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\bin\Debug\asmx.exe.config
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\bin\Debug\asmx.exe
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\bin\Debug\asmx.pdb
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.csproj.AssemblyReference.cache
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.Form1.resources
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.Properties.Resources.resources
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.csproj.GenerateResource.cache
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.csproj.CoreCompileInputs.cache
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.exe
+D:\Escritorio\INF324\3er examen 324\p2\cliente\asmx\obj\Debug\asmx.pdb
